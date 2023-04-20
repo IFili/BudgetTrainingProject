@@ -1,0 +1,18 @@
+﻿using System.ComponentModel;
+
+namespace Budget.Mvc.Models.ViewModels
+{
+	public class FilterParametersViewModel
+	{
+		[DisplayName("Category")]
+		public int? CategoryId { get; set; }
+
+		[DisplayName("Start Date")]
+		public string? StartDate { get; set; }
+
+		public string? EndDate { get; set; }
+
+		public List <Category>? Categories { get; set; }
+
+	}
+}
